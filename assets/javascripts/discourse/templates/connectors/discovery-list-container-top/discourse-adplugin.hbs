@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.adsense_mobile_topic_list_top_code}}
+    {{google-adsense placement="topic-list-top" listLoading=listLoading}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.adsense_topic_list_top_code}}
+    {{google-adsense placement="topic-list-top" listLoading=listLoading}}
+  {{/if}}
+{{/if}}

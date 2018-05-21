@@ -1,0 +1,110 @@
+adsense_plugin:
+  adsense_publisher_code:
+    client: true
+    default: ''
+    regex: '^[\d]*$'
+  adsense_through_trust_level:
+    client: true
+    default: 2
+    enum: 'TrustLevelSetting'
+  adsense_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_topic_list_top_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: &adsense_choices
+      - responsive
+      - 728*90 - leaderboard
+      - 336*280 - large rectangle
+      - 300*250 - medium rectangle
+      - 970*90 - large leaderboard
+      - 970*250 - billboard
+      - 468*60 - banner
+      - 320*50 - mobile leaderboard
+      - 160*600 - wide skyscraper
+      - 234*60 - half banner
+      - 125*125 - button
+      - 180*150 - small rectangle
+      - 200*200 - small square
+      - 250*250 - square
+      - 300*600 - half page ad
+      - 320*100 - large mobile banner
+      - 690*250
+  adsense_mobile_topic_list_top_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_topic_list_top_ad_size:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+  adsense_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_topic_above_post_stream_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_topic_above_post_stream_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_topic_above_post_stream_ad_size:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+  adsense_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_topic_above_suggested_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_topic_above_suggested_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_topic_above_suggested_ad_size:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+  adsense_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_post_bottom_ad_sizes:
+    client: true
+    default: '728*90 - leaderboard'
+    type: enum
+    choices: *adsense_choices
+  adsense_mobile_post_bottom_code:
+    client: true
+    default: ''
+    max: 50
+    regex: '^[\d]*$'
+  adsense_mobile_post_bottom_ad_size:
+    client: true
+    default: 'responsive'
+    type: enum
+    choices: *adsense_choices
+  adsense_nth_post_code:
+    client: true
+    default: ''
+    min: 1

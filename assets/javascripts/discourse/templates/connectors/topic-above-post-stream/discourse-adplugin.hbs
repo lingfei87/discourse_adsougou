@@ -1,0 +1,9 @@
+{{#if site.mobileView}}
+  {{#if siteSettings.adsense_mobile_topic_above_post_stream_code}}
+    {{google-adsense placement="topic-above-post-stream"}}
+  {{/if}}
+{{else}}
+  {{#if siteSettings.adsense_topic_above_post_stream_code}}
+    {{google-adsense placement="topic-above-post-stream"}}
+  {{/if}}
+{{/if}}
